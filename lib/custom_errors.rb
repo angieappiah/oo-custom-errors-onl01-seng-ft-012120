@@ -12,7 +12,7 @@ class Person
         raise PartnerError
       rescue PartnerError => error
           puts error.message
-      end
+     end
     else
       person.partner = self
     end
@@ -28,4 +28,3 @@ end
 beyonce = Person.new("Beyonce")
 beyonce.get_married("Jay-Z")
 puts beyonce.name
-end
