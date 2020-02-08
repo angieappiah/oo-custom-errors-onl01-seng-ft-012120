@@ -11,10 +11,9 @@ class Person
     if person.class != Person
       begin
         raise PartnerError
-      rescue PartnerError 
+      rescue PartnerError => error
           puts error.message
-      end
-    else
+     else
       person.partner = self
     end
   end
